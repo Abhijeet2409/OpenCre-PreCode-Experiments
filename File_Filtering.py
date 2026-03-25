@@ -22,7 +22,7 @@ for line in diff_files:
     parts = line.split("\t")
     status, path = parts[0], parts[-1]
 
-# Intentional skipping of deleted files in commit(to align with the proposed approach).
+# Intentional skipping of deleted files(to align with the proposed approach).
     if status == "D":
         continue  
 
