@@ -6,7 +6,7 @@ def run(cmd):
 
 diff = run(["git", "diff", "HEAD~1", "HEAD", "--", file]).split("\n")
 
-# For simplicity and ensuring minimal script (as per requirment) ,
+# For simplicity and to keep the script minimal (as per requirement),
 #  I considered prinitng only cleaned "added" lines from raw diffs.
 print("ADDED :")
 
